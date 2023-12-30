@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'MOC';
+    src: url('./assets/fonts/MountainsofChristmas-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+    margin: 0
+}
+
+body {
+    background-color: black;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+canvas {
+    position: relative;
+    background-color: #0d0d1e;
+
+
+}
+
+.snow {
+    animation: fall ease-in infinite, sway ease-in-out infinite;
+    color: rgba(255, 255, 255);
+    position: absolute;
+}
+
+.canvas-container {
+    position: relative;
+    z-index: 2;
+}
+
+#snow-container {
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transition: opacity 500ms;
+    width: 100%;
+}
+
+@keyframes fall {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 100vh;
+        opacity: 1;
+    }
+}
+
+@keyframes sway {
+    0% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: 50px;
+    }
+
+    50% {
+        margin-left: -50px;
+    }
+
+    75% {
+        margin-left: 50px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
