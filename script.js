@@ -65,8 +65,6 @@ let startTime = new Date().getTime();
 function updateSpeed() {
   if (speedScaling < 1.4) speedScaling += 0.1;
   else speedScaling += 0.01;
-
-  console.log(speedScaling);
 }
 
 setInterval(() => {
