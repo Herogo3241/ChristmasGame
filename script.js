@@ -86,8 +86,8 @@ function updateScore() {
 function displayScore() {
   c.fillStyle = "#fff";
   c.font = "30px 'MOC', sans-serif";
-  c.fillText(`Score: ${score}`, canvas.width - 150, 30);
-  c.fillText(`High Score: ${highScore}`, canvas.width - 150, 60);
+  c.fillText(`Score: ${score}`, canvas.width - 200, 30);
+  c.fillText(`High Score: ${highScore}`, canvas.width - 200, 60);
 }
 
 //Initial Screen before game starts
